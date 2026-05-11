@@ -1,0 +1,92 @@
+aid: quickbooks-online
+name: QuickBooks Online
+description: >-
+  QuickBooks Online is Intuit's cloud accounting platform for small and
+  mid-sized businesses, providing invoicing, expense tracking, payroll,
+  reporting, sales tax, and bookkeeping. The QuickBooks Online Accounting
+  API (v3) gives developers REST access to customers, invoices, payments,
+  items, vendors, journal entries, and the full chart of accounts. The API
+  uses OAuth 2.0 with the Intuit OAuth platform and is sandbox-enabled for
+  development and testing.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Accounting
+  - Bookkeeping
+  - Invoicing
+  - Small Business
+  - Finance
+  - Payments
+  - Payroll
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/quickbooks-online/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: quickbooks-online:accounting-api
+    name: QuickBooks Online Accounting API
+    description: >-
+      REST API (v3) for managing customers, invoices, estimates, payments,
+      items, vendors, employees, journal entries, accounts, and reports in
+      a QuickBooks Online company. Authentication uses OAuth 2.0 issued by
+      Intuit's identity platform; sandbox companies are available for
+      development.
+    humanURL: https://developer.intuit.com/app/developer/qbo/docs/api/accounting/most-commonly-used/account
+    baseURL: https://quickbooks.api.intuit.com/v3
+    tags:
+      - Accounting
+      - Invoicing
+      - Customers
+      - Payments
+      - Reports
+    properties:
+      - type: Documentation
+        url: https://developer.intuit.com/app/developer/qbo/docs/develop
+      - type: API Reference
+        url: https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account
+      - type: OAuth 2.0
+        url: https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0
+      - type: Sandbox
+        url: https://quickbooks-online-sandbox.api.intuit.com/v3
+      - type: OpenAPI
+        url: https://developer.intuit.com/app/developer/qbo/docs/develop/explore-the-quickbooks-online-api/openapi-specifications
+  - aid: quickbooks-online:payments-api
+    name: QuickBooks Payments API
+    description: >-
+      REST API for processing card and bank payments, tokenizing payment
+      methods, creating charges and refunds, and managing eChecks tied to a
+      QuickBooks Online merchant account. Authentication uses OAuth 2.0.
+    humanURL: https://developer.intuit.com/app/developer/qbpayments/docs/api/resources/all-entities/charges
+    baseURL: https://api.intuit.com/quickbooks/v4/payments
+    tags:
+      - Payments
+      - Cards
+      - eCheck
+      - Merchant Services
+    properties:
+      - type: Documentation
+        url: https://developer.intuit.com/app/developer/qbpayments/docs/get-started
+
+common:
+  - type: Website
+    url: https://quickbooks.intuit.com/online/
+  - type: Developer Portal
+    url: https://developer.intuit.com
+  - type: Documentation
+    url: https://developer.intuit.com/app/developer/qbo/docs/develop
+  - type: Pricing
+    url: https://quickbooks.intuit.com/pricing/
+  - type: Sign Up
+    url: https://quickbooks.intuit.com/online/signup/
+  - type: Developer Sign Up
+    url: https://developer.intuit.com/app/developer/myapps
+  - type: SDK
+    url: https://developer.intuit.com/app/developer/qbo/docs/develop/sdks-and-samples-collections
+  - type: Support
+    url: https://help.developer.intuit.com
+  - type: Status
+    url: https://status.developer.intuit.com
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
