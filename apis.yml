@@ -43,7 +43,7 @@ apis:
     properties:
       - type: Documentation
         url: https://developer.intuit.com/app/developer/qbo/docs/develop
-      - type: API Reference
+      - type: APIReference
         url: https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account
       - type: OAuth 2.0
         url: https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0
@@ -77,7 +77,7 @@ common:
     url: https://developer.intuit.com/app/developer/qbo/docs/develop
   - type: Pricing
     url: https://quickbooks.intuit.com/pricing/
-  - type: Sign Up
+  - type: SignUp
     url: https://quickbooks.intuit.com/online/signup/
   - type: Developer Sign Up
     url: https://developer.intuit.com/app/developer/myapps
@@ -85,7 +85,7 @@ common:
     url: https://developer.intuit.com/app/developer/qbo/docs/develop/sdks-and-samples-collections
   - type: Support
     url: https://help.developer.intuit.com
-  - type: Status
+  - type: StatusPage
     url: https://status.developer.intuit.com
 maintainers:
   - FN: Kin Lane
