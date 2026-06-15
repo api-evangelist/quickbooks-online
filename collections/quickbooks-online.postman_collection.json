@@ -1,0 +1,814 @@
+{
+  "item": [
+    {
+      "id": "140cb059-a8d5-42bf-a9f8-6de6c7b12f63",
+      "name": "Create a customer",
+      "request": {
+        "name": "Create a customer",
+        "description": {},
+        "url": {
+          "path": [
+            "v3",
+            "company",
+            ":realmId",
+            "customer"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "realmId",
+              "description": "(Required) QuickBooks company (realm) ID"
+            }
+          ]
+        },
+        "method": "POST",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "b7feea6e-daa5-4a48-a746-a2cd1dbbd207",
+          "name": "Customer created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v3",
+                "company",
+                ":realmId",
+                "customer"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "realmId",
+                  "description": "(Required) QuickBooks company (realm) ID"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: oauth2",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "<token>"
+              }
+            ],
+            "method": "POST",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "32bd25cc-e7af-4068-a4e7-344eca483c78",
+      "name": "Read a customer",
+      "request": {
+        "name": "Read a customer",
+        "description": {},
+        "url": {
+          "path": [
+            "v3",
+            "company",
+            ":realmId",
+            "customer",
+            ":customerId"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "realmId",
+              "description": "(Required) QuickBooks company (realm) ID"
+            },
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "customerId",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "52c94bda-2c40-412b-bb78-fe24db6f1fcb",
+          "name": "Customer",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v3",
+                "company",
+                ":realmId",
+                "customer",
+                ":customerId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "realmId",
+                  "description": "(Required) QuickBooks company (realm) ID"
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "customerId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: oauth2",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "<token>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "936d095d-ea30-4769-b832-093f4232ab49",
+      "name": "Create an invoice",
+      "request": {
+        "name": "Create an invoice",
+        "description": {},
+        "url": {
+          "path": [
+            "v3",
+            "company",
+            ":realmId",
+            "invoice"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "realmId",
+              "description": "(Required) QuickBooks company (realm) ID"
+            }
+          ]
+        },
+        "method": "POST",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "ac9eb766-8545-4896-bd0f-3965409821d9",
+          "name": "Invoice created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v3",
+                "company",
+                ":realmId",
+                "invoice"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "realmId",
+                  "description": "(Required) QuickBooks company (realm) ID"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: oauth2",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "<token>"
+              }
+            ],
+            "method": "POST",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "f0233aa9-72d8-4eba-8e20-dc2c5a6d7985",
+      "name": "Read an invoice",
+      "request": {
+        "name": "Read an invoice",
+        "description": {},
+        "url": {
+          "path": [
+            "v3",
+            "company",
+            ":realmId",
+            "invoice",
+            ":invoiceId"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "realmId",
+              "description": "(Required) QuickBooks company (realm) ID"
+            },
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "invoiceId",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "7edce4bf-e1ac-44c2-ac46-84bfa79ab215",
+          "name": "Invoice",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v3",
+                "company",
+                ":realmId",
+                "invoice",
+                ":invoiceId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "realmId",
+                  "description": "(Required) QuickBooks company (realm) ID"
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "invoiceId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: oauth2",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "<token>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "ada1d9ce-c485-41a2-af80-d36cfdaf311a",
+      "name": "Create an account",
+      "request": {
+        "name": "Create an account",
+        "description": {},
+        "url": {
+          "path": [
+            "v3",
+            "company",
+            ":realmId",
+            "account"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "realmId",
+              "description": "(Required) QuickBooks company (realm) ID"
+            }
+          ]
+        },
+        "method": "POST",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "fe5cf6b9-5be4-4221-9360-0570d7c1aa26",
+          "name": "Account created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v3",
+                "company",
+                ":realmId",
+                "account"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "realmId",
+                  "description": "(Required) QuickBooks company (realm) ID"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: oauth2",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "<token>"
+              }
+            ],
+            "method": "POST",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "71eaf538-8aff-4d1a-ac1a-404209c4fdda",
+      "name": "Read an account",
+      "request": {
+        "name": "Read an account",
+        "description": {},
+        "url": {
+          "path": [
+            "v3",
+            "company",
+            ":realmId",
+            "account",
+            ":accountId"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "realmId",
+              "description": "(Required) QuickBooks company (realm) ID"
+            },
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "accountId",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "047eb686-e23b-4a23-89d5-f10014146d05",
+          "name": "Account",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v3",
+                "company",
+                ":realmId",
+                "account",
+                ":accountId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "realmId",
+                  "description": "(Required) QuickBooks company (realm) ID"
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "accountId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: oauth2",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "<token>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "55a59b2a-65c4-4a3f-a3a1-b6d589cc51da",
+      "name": "Run a QuickBooks query",
+      "request": {
+        "name": "Run a QuickBooks query",
+        "description": {},
+        "url": {
+          "path": [
+            "v3",
+            "company",
+            ":realmId",
+            "query"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "query",
+              "value": "<string>",
+              "description": "(Required) QuickBooks query language string (e.g. select * from Customer)"
+            }
+          ],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "realmId",
+              "description": "(Required) QuickBooks company (realm) ID"
+            }
+          ]
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "84b00755-8d3c-4bdb-b464-8d100b054866",
+          "name": "Query results",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v3",
+                "company",
+                ":realmId",
+                "query"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "query",
+                  "value": "<string>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "realmId",
+                  "description": "(Required) QuickBooks company (realm) ID"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: oauth2",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "<token>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "8312604a-38ee-4829-a305-fd6a6b00fe5e",
+      "name": "Read company info",
+      "request": {
+        "name": "Read company info",
+        "description": {},
+        "url": {
+          "path": [
+            "v3",
+            "company",
+            ":realmId",
+            "companyinfo",
+            ":companyInfoId"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "realmId",
+              "description": "(Required) QuickBooks company (realm) ID"
+            },
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "companyInfoId",
+              "description": "(Required) "
+            }
+          ]
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "7639ee04-365b-4950-bde5-baf8bb592ed9",
+          "name": "Company info",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "v3",
+                "company",
+                ":realmId",
+                "companyinfo",
+                ":companyInfoId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "realmId",
+                  "description": "(Required) QuickBooks company (realm) ID"
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "companyInfoId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: oauth2",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "<token>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://quickbooks.api.intuit.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "scope",
+        "value": "com.intuit.quickbooks.accounting com.intuit.quickbooks.payment openid profile email"
+      },
+      {
+        "key": "accessTokenUrl",
+        "value": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer"
+      },
+      {
+        "key": "authUrl",
+        "value": "https://appcenter.intuit.com/connect/oauth2"
+      },
+      {
+        "key": "grant_type",
+        "value": "authorization_code"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "e36c6b4f-aa71-4a12-b72a-d7879a0835f8",
+    "name": "QuickBooks Online Accounting API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST API for Intuit's QuickBooks Online cloud accounting platform. Provides programmatic access to customers, invoices, payments, items, vendors, and other accounting entities for a given QuickBooks company (realm).",
+      "type": "text/plain"
+    }
+  }
+}

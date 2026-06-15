@@ -1,0 +1,200 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "QuickBooks Online Accounting API",
+    "version": "v3"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "authorization_code",
+      "authorizationUrl": "https://appcenter.intuit.com/connect/oauth2",
+      "accessTokenUrl": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Create a customer",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://quickbooks.api.intuit.com/v3/company/:realmId/customer",
+        "params": [
+          {
+            "name": "realmId",
+            "value": "",
+            "type": "path",
+            "description": "QuickBooks company (realm) ID"
+          }
+        ]
+      },
+      "docs": "Create a customer"
+    },
+    {
+      "info": {
+        "name": "Read a customer",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://quickbooks.api.intuit.com/v3/company/:realmId/customer/:customerId",
+        "params": [
+          {
+            "name": "realmId",
+            "value": "",
+            "type": "path",
+            "description": "QuickBooks company (realm) ID"
+          },
+          {
+            "name": "customerId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Read a customer"
+    },
+    {
+      "info": {
+        "name": "Create an invoice",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://quickbooks.api.intuit.com/v3/company/:realmId/invoice",
+        "params": [
+          {
+            "name": "realmId",
+            "value": "",
+            "type": "path",
+            "description": "QuickBooks company (realm) ID"
+          }
+        ]
+      },
+      "docs": "Create an invoice"
+    },
+    {
+      "info": {
+        "name": "Read an invoice",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://quickbooks.api.intuit.com/v3/company/:realmId/invoice/:invoiceId",
+        "params": [
+          {
+            "name": "realmId",
+            "value": "",
+            "type": "path",
+            "description": "QuickBooks company (realm) ID"
+          },
+          {
+            "name": "invoiceId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Read an invoice"
+    },
+    {
+      "info": {
+        "name": "Create an account",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://quickbooks.api.intuit.com/v3/company/:realmId/account",
+        "params": [
+          {
+            "name": "realmId",
+            "value": "",
+            "type": "path",
+            "description": "QuickBooks company (realm) ID"
+          }
+        ]
+      },
+      "docs": "Create an account"
+    },
+    {
+      "info": {
+        "name": "Read an account",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://quickbooks.api.intuit.com/v3/company/:realmId/account/:accountId",
+        "params": [
+          {
+            "name": "realmId",
+            "value": "",
+            "type": "path",
+            "description": "QuickBooks company (realm) ID"
+          },
+          {
+            "name": "accountId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Read an account"
+    },
+    {
+      "info": {
+        "name": "Run a QuickBooks query",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://quickbooks.api.intuit.com/v3/company/:realmId/query",
+        "params": [
+          {
+            "name": "realmId",
+            "value": "",
+            "type": "path",
+            "description": "QuickBooks company (realm) ID"
+          },
+          {
+            "name": "query",
+            "value": "",
+            "type": "query",
+            "description": "QuickBooks query language string (e.g. select * from Customer)"
+          }
+        ]
+      },
+      "docs": "Run a QuickBooks query"
+    },
+    {
+      "info": {
+        "name": "Read company info",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://quickbooks.api.intuit.com/v3/company/:realmId/companyinfo/:companyInfoId",
+        "params": [
+          {
+            "name": "realmId",
+            "value": "",
+            "type": "path",
+            "description": "QuickBooks company (realm) ID"
+          },
+          {
+            "name": "companyInfoId",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Read company info"
+    }
+  ],
+  "bundled": true
+}
