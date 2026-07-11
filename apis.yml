@@ -69,6 +69,10 @@ apis:
         url: https://developer.intuit.com/app/developer/qbpayments/docs/get-started
 
 common:
+  - type: Authentication
+    url: authentication/quickbooks-online-authentication.yml
+  - type: OAuthScopes
+    url: scopes/quickbooks-online-scopes.yml
   - type: GitHubOrganization
     url: https://github.com/intuit
   - type: LinkedIn

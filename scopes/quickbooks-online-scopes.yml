@@ -1,0 +1,42 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/quickbooks-online-openapi.yml
+schemes:
+- name: OAuth2
+  source: openapi/quickbooks-online-openapi.yml
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://appcenter.intuit.com/connect/oauth2
+    tokenUrl: https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer
+  description: Intuit OAuth 2.0
+scopes:
+- scope: com.intuit.quickbooks.accounting
+  description: Accounting scope
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/quickbooks-online-openapi.yml
+- scope: com.intuit.quickbooks.payment
+  description: Payments scope
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/quickbooks-online-openapi.yml
+- scope: email
+  description: User email
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/quickbooks-online-openapi.yml
+- scope: openid
+  description: OpenID Connect
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/quickbooks-online-openapi.yml
+- scope: profile
+  description: User profile
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/quickbooks-online-openapi.yml
