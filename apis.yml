@@ -69,6 +69,8 @@ apis:
         url: https://developer.intuit.com/app/developer/qbpayments/docs/get-started
 
 common:
+  - type: DomainSecurity
+    url: security/quickbooks-online-domain-security.yml
   - type: Authentication
     url: authentication/quickbooks-online-authentication.yml
   - type: OAuthScopes
