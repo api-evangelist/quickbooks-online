@@ -69,6 +69,8 @@ apis:
         url: https://developer.intuit.com/app/developer/qbpayments/docs/get-started
 
 common:
+  - type: AgenticAccess
+    url: agentic-access/quickbooks-online-agentic-access.yml
   - type: DomainSecurity
     url: security/quickbooks-online-domain-security.yml
   - type: Authentication
