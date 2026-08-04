@@ -1,0 +1,14 @@
+{
+  "provider": "quickbooks-online",
+  "sources": [
+    "quickbooks-online-company-api-openapi.yml"
+  ],
+  "outputs": [
+    "quickbooks-online-company-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

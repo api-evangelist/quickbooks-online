@@ -1,0 +1,137 @@
+openapi: 3.1.0
+info:
+  title: QuickBooks Online Accounting API
+  description: >-
+    REST API for Intuit's QuickBooks Online cloud accounting platform. Provides
+    programmatic access to customers, invoices, payments, items, vendors, and
+    other accounting entities for a given QuickBooks company (realm).
+  version: v3
+servers:
+  - url: https://quickbooks.api.intuit.com
+    description: Production
+  - url: https://sandbox-quickbooks.api.intuit.com
+    description: Sandbox
+security:
+  - OAuth2: []
+paths:
+  /v3/company/{realmId}/customer:
+    parameters:
+      - $ref: '#/components/parameters/RealmId'
+    post:
+      summary: Create a customer
+      operationId: createCustomer
+      responses:
+        '200':
+          description: Customer created
+  /v3/company/{realmId}/customer/{customerId}:
+    parameters:
+      - $ref: '#/components/parameters/RealmId'
+      - name: customerId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      summary: Read a customer
+      operationId: readCustomer
+      responses:
+        '200':
+          description: Customer
+  /v3/company/{realmId}/invoice:
+    parameters:
+      - $ref: '#/components/parameters/RealmId'
+    post:
+      summary: Create an invoice
+      operationId: createInvoice
+      responses:
+        '200':
+          description: Invoice created
+  /v3/company/{realmId}/invoice/{invoiceId}:
+    parameters:
+      - $ref: '#/components/parameters/RealmId'
+      - name: invoiceId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      summary: Read an invoice
+      operationId: readInvoice
+      responses:
+        '200':
+          description: Invoice
+  /v3/company/{realmId}/account:
+    parameters:
+      - $ref: '#/components/parameters/RealmId'
+    post:
+      summary: Create an account
+      operationId: createAccount
+      responses:
+        '200':
+          description: Account created
+  /v3/company/{realmId}/account/{accountId}:
+    parameters:
+      - $ref: '#/components/parameters/RealmId'
+      - name: accountId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      summary: Read an account
+      operationId: readAccount
+      responses:
+        '200':
+          description: Account
+  /v3/company/{realmId}/query:
+    parameters:
+      - $ref: '#/components/parameters/RealmId'
+      - name: query
+        in: query
+        required: true
+        description: QuickBooks query language string (e.g. select * from Customer)
+        schema:
+          type: string
+    get:
+      summary: Run a QuickBooks query
+      operationId: runQuery
+      responses:
+        '200':
+          description: Query results
+  /v3/company/{realmId}/companyinfo/{companyInfoId}:
+    parameters:
+      - $ref: '#/components/parameters/RealmId'
+      - name: companyInfoId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      summary: Read company info
+      operationId: readCompanyInfo
+      responses:
+        '200':
+          description: Company info
+components:
+  parameters:
+    RealmId:
+      name: realmId
+      in: path
+      required: true
+      description: QuickBooks company (realm) ID
+      schema:
+        type: string
+  securitySchemes:
+    OAuth2:
+      type: oauth2
+      description: Intuit OAuth 2.0
+      flows:
+        authorizationCode:
+          authorizationUrl: https://appcenter.intuit.com/connect/oauth2
+          tokenUrl: https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer
+          scopes:
+            com.intuit.quickbooks.accounting: Accounting scope
+            com.intuit.quickbooks.payment: Payments scope
+            openid: OpenID Connect
+            profile: User profile
+            email: User email
