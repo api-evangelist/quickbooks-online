@@ -34,7 +34,7 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/quickbooks-online/refs/heads/main/apis.yml
 created: '2026-05-11'
 modified: '2026-05-11'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: quickbooks-online:payments-api
   name: QuickBooks Payments API
