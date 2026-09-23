@@ -1,7 +1,7 @@
 {
   "provider": "quickbooks-online",
   "sources": [
-    "quickbooks-online-company-api-openapi.yml"
+    "_original/quickbooks-online-openapi.yml"
   ],
   "outputs": [
     "quickbooks-online-company-api-openapi.yml"
@@ -10,8 +10,20 @@
   "errors": [],
   "warnings": [],
   "notes": [
-    "quickbooks-online-company-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "quickbooks-online-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "quickbooks-online-openapi.yml: tagged paths POST /v3/company/{realmId}/customer -> Company",
+    "quickbooks-online-openapi.yml: tagged paths GET /v3/company/{realmId}/customer/{customerId} -> Company",
+    "quickbooks-online-openapi.yml: tagged paths POST /v3/company/{realmId}/invoice -> Company",
+    "quickbooks-online-openapi.yml: tagged paths GET /v3/company/{realmId}/invoice/{invoiceId} -> Company",
+    "quickbooks-online-openapi.yml: tagged paths POST /v3/company/{realmId}/account -> Company",
+    "quickbooks-online-openapi.yml: tagged paths GET /v3/company/{realmId}/account/{accountId} -> Company",
+    "quickbooks-online-openapi.yml: tagged paths GET /v3/company/{realmId}/query -> Company",
+    "quickbooks-online-openapi.yml: tagged paths GET /v3/company/{realmId}/companyinfo/{companyInfoId} -> Company",
+    "quickbooks-online-openapi.yml: declared missing tag: Company",
     "apis.yml register: already-registered"
   ],
-  "skipped": []
+  "skipped": [
+    "quickbooks-online-company-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
